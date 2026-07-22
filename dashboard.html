@@ -1,0 +1,447 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Survey Hub Dashboard</title>
+
+<style>
+
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:Arial,sans-serif;
+}
+
+
+body{
+
+background:linear-gradient(135deg,#030712,#1d4ed8,#0ea5e9);
+color:white;
+min-height:100vh;
+
+}
+
+
+/* TOP BAR */
+
+.topbar{
+
+display:flex;
+justify-content:space-between;
+align-items:center;
+padding:20px 30px;
+background:rgba(255,255,255,.12);
+backdrop-filter:blur(20px);
+
+}
+
+
+.logo{
+
+font-size:28px;
+font-weight:bold;
+color:#00ffcc;
+
+}
+
+
+.wallet{
+
+background:#00ff88;
+color:#001;
+padding:15px 25px;
+border-radius:30px;
+font-weight:bold;
+
+}
+
+
+
+/* MENU */
+
+.menu{
+
+display:flex;
+gap:15px;
+padding:20px 30px;
+
+}
+
+
+.menu a{
+
+text-decoration:none;
+color:white;
+padding:12px 20px;
+border-radius:20px;
+background:rgba(255,255,255,.12);
+
+}
+
+
+.menu a.active{
+
+background:#00ff88;
+color:#001;
+
+}
+
+
+
+/* CONTENT */
+
+.container{
+
+padding:30px;
+
+}
+
+
+.banner{
+
+padding:35px;
+border-radius:30px;
+background:linear-gradient(45deg,#2563eb,#06b6d4);
+margin-bottom:30px;
+
+}
+
+
+.banner h1{
+
+font-size:35px;
+
+}
+
+
+
+
+/* MONEY CARDS */
+
+.cards{
+
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+gap:20px;
+
+}
+
+
+.card{
+
+background:rgba(255,255,255,.15);
+padding:25px;
+border-radius:25px;
+backdrop-filter:blur(20px);
+
+}
+
+
+.card h2{
+
+color:#00ffcc;
+
+}
+
+
+.money{
+
+font-size:35px;
+color:#00ff88;
+
+}
+
+
+
+/* SURVEY LIST */
+
+.title{
+
+margin:35px 0 20px;
+color:#00ffcc;
+
+}
+
+
+.surveys{
+
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+gap:20px;
+
+}
+
+
+
+.survey{
+
+background:rgba(255,255,255,.14);
+padding:25px;
+border-radius:25px;
+
+}
+
+
+.survey span{
+
+color:#00ff88;
+font-weight:bold;
+
+}
+
+
+.start{
+
+display:inline-block;
+margin-top:20px;
+padding:12px 25px;
+border-radius:30px;
+background:#00ff88;
+color:#001;
+text-decoration:none;
+font-weight:bold;
+
+}
+
+
+
+/* PREMIUM */
+
+.premium{
+
+margin-top:30px;
+background:rgba(0,0,0,.3);
+padding:25px;
+border-radius:25px;
+
+}
+
+
+.lock{
+
+padding:15px;
+margin:10px;
+background:rgba(255,255,255,.1);
+border-radius:15px;
+
+}
+
+
+</style>
+
+</head>
+
+
+<body>
+
+
+<div class="topbar">
+
+<div class="logo">
+📊 Survey Hub
+</div>
+
+
+<div class="wallet">
+💰 KSh 0
+</div>
+
+
+</div>
+
+
+
+<div class="menu">
+
+<a class="active" href="#">
+🏠 Home
+</a>
+
+<a href="survey.html">
+📝 Surveys
+</a>
+
+<a href="quiz.html">
+🧠 Quiz
+</a>
+
+<a href="rewards.html">
+🎁 Rewards
+</a>
+
+<a href="profile.html">
+👤 Profile
+</a>
+
+</div>
+
+
+
+<div class="container">
+
+
+<div class="banner">
+
+<h1>
+Welcome Back 👋
+</h1>
+
+<p>
+Earn money by completing surveys and quizzes.
+</p>
+
+</div>
+
+
+
+<div class="cards">
+
+
+<div class="card">
+
+<h2>
+💰 Earnings
+</h2>
+
+<div class="money">
+KSh 0
+</div>
+
+</div>
+
+
+
+<div class="card">
+
+<h2>
+📝 Completed
+</h2>
+
+<div class="money">
+0
+</div>
+
+</div>
+
+
+
+<div class="card">
+
+<h2>
+🎁 Withdrawable
+</h2>
+
+<div class="money">
+KSh 0
+</div>
+
+</div>
+
+
+</div>
+
+
+
+<h2 class="title">
+🔥 Available Surveys
+</h2>
+
+
+
+<div class="surveys">
+
+
+<div class="survey">
+
+<h3>📱 Mobile Research</h3>
+
+<p>Reward: <span>KSh 50</span></p>
+
+<a class="start" href="survey.html">
+Start
+</a>
+
+</div>
+
+
+
+<div class="survey">
+
+<h3>🛒 Shopping Habits</h3>
+
+<p>Reward: <span>KSh 100</span></p>
+
+<a class="start" href="survey.html">
+Start
+</a>
+
+</div>
+
+
+
+
+<div class="survey">
+
+<h3>🎮 Gaming Survey</h3>
+
+<p>Reward: <span>KSh 75</span></p>
+
+<a class="start" href="survey.html">
+Start
+</a>
+
+</div>
+
+
+
+
+<div class="survey">
+
+<h3>🌍 Lifestyle</h3>
+
+<p>Reward: <span>KSh 120</span></p>
+
+<a class="start" href="survey.html">
+Start
+</a>
+
+</div>
+
+
+</div>
+
+
+
+<div class="premium">
+
+<h2>
+🔒 Premium Surveys
+</h2>
+
+<div class="lock">
+🔒 Finance Survey - Upgrade Required
+</div>
+
+<div class="lock">
+🔒 Business Survey - Upgrade Required
+</div>
+
+<div class="lock">
+🔒 Technology Survey - Upgrade Required
+</div>
+
+
+</div>
+
+
+</div>
+
+
+</body>
+
+  </html>
