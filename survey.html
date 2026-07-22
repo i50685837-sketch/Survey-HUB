@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Survey Hub - Complete Survey</title>
+
+<style>
+
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:Arial,sans-serif;
+}
+
+body{
+background:linear-gradient(135deg,#020617,#1d4ed8,#06b6d4);
+color:white;
+padding:20px;
+}
+
+
+.container{
+max-width:800px;
+margin:auto;
+background:rgba(255,255,255,.15);
+padding:35px;
+border-radius:30px;
+backdrop-filter:blur(20px);
+}
+
+
+.logo{
+text-align:center;
+font-size:30px;
+font-weight:bold;
+color:#00ffcc;
+}
+
+
+.reward{
+background:#00ff88;
+color:#001;
+padding:15px;
+border-radius:20px;
+text-align:center;
+margin:25px 0;
+font-weight:bold;
+}
+
+
+.question{
+background:rgba(255,255,255,.12);
+padding:20px;
+border-radius:20px;
+margin:20px 0;
+}
+
+
+.question h3{
+color:#00ffcc;
+margin-bottom:15px;
+}
+
+
+label{
+display:block;
+padding:10px;
+}
+
+
+button{
+width:100%;
+padding:16px;
+border:none;
+border-radius:30px;
+background:linear-gradient(45deg,#00ff88,#00c6ff);
+font-size:18px;
+font-weight:bold;
+cursor:pointer;
+}
+
+</style>
+
+</head>
+
+
+<body>
+
+
+<div class="container">
+
+
+<div class="logo">
+📊 Survey Hub
+</div>
+
+
+<div class="reward">
+Complete this survey and earn KSh 150 💰
+</div>
+
+
+
+<form id="surveyForm">
+
+
+<div class="question">
+<h3>1. What is your age group?</h3>
+<label><input type="radio" name="q1"> 18 - 25</label>
+<label><input type="radio" name="q1"> 26 - 35</label>
+<label><input type="radio" name="q1"> 36+</label>
+</div>
+
+
+
+<div class="question">
+<h3>2. Which device do you use most?</h3>
+<label><input type="radio" name="q2"> Smartphone</label>
+<label><input type="radio" name="q2"> Laptop</label>
+<label><input type="radio" name="q2"> Tablet</label>
+</div>
+
+
+
+<div class="question">
+<h3>3. How often do you shop online?</h3>
+<label><input type="radio" name="q3"> Every day</label>
+<label><input type="radio" name="q3"> Weekly</label>
+<label><input type="radio" name="q3"> Rarely</label>
+</div>
+
+
+
+<div class="question">
+<h3>4. Which payment method do you prefer?</h3>
+<label><input type="radio" name="q4"> Mobile Money</label>
+<label><input type="radio" name="q4"> Bank Card</label>
+<label><input type="radio" name="q4"> Cash</label>
+</div>
+
+
+
+<div class="question">
+<h3>5. What type of apps do you use most?</h3>
+<label><input type="radio" name="q5"> Social Media</label>
+<label><input type="radio" name="q5"> Games</label>
+<label><input type="radio" name="q5"> Education</label>
+</div>
+
+
+
+<div class="question">
+<h3>6. How many hours do you spend online daily?</h3>
+<label><input type="radio" name="q6"> Less than 2 hours</label>
+<label><input type="radio" name="q6"> 2 - 5 hours</label>
+<label><input type="radio" name="q6"> More than 5 hours</label>
+</div>
+
+
+
+<div class="question">
+<h3>7. What products interest you?</h3>
+<label><input type="radio" name="q7"> Electronics</label>
+<label><input type="radio" name="q7"> Clothes</label>
+<label><input type="radio" name="q7"> Food</label>
+</div>
+
+
+
+<div class="question">
+<h3>8. Do you like online rewards?</h3>
+<label><input type="radio" name="q8"> Yes</label>
+<label><input type="radio" name="q8"> No</label>
+</div>
+
+
+
+<div class="question">
+<h3>9. How do you discover new products?</h3>
+<label><input type="radio" name="q9"> Social Media</label>
+<label><input type="radio" name="q9"> Friends</label>
+<label><input type="radio" name="q9"> Websites</label>
+</div>
+
+
+
+<div class="question">
+<h3>10. Would you participate in more surveys?</h3>
+<label><input type="radio" name="q10"> Yes</label>
+<label><input type="radio" name="q10"> Maybe</label>
+<label><input type="radio" name="q10"> No</label>
+</div>
+
+
+
+<button type="submit">
+Submit Survey & Earn KSh 150 💰
+</button>
+
+
+</form>
+
+
+</div>
+
+
+<script src="js/survey.js"></script>
+
+</body>
+  </html>
